@@ -1,0 +1,27 @@
+.dateSelector{
+    background:linear-gradient(to right,#9ab1d9,#aa5075);
+    border-radius:10px;
+    border: 0px;
+    color: white;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    font-family: sans;
+}
+.dateWrapper{
+
+    display:flex;
+    margin: 10px auto;
+    flex-flow:column;
+}
+.searchUniverse{
+    width: 150px;
+    margin: auto;
+    color: #dbedfd;
+border-radius: 20px;
+border: 0px;
+height: 40px;
+background: #9aa1ba;
+}

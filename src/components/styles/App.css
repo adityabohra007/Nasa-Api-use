@@ -1,0 +1,30 @@
+.App{
+     display:flex;
+     width:80%;
+     box-shadow:2px 2px 2px 2px gray;
+     background:silver;
+     background-repeat:none;
+     height:90%;
+     flex-flow:row;
+     margin:20px auto;
+     align-items:center;
+     justify-content:center;
+     border-radius:10px;
+     box-shadow: 0 14px 45px rgba(0, 0, 0, 0.22), 0 18px 45px rgba(0, 0, 0, 0.22);
+     background:linear-gradient(to-right,)
+}
+
+.Title{
+
+    height: 100%;
+
+width: 400px;
+
+padding: 20px;
+
+text-align: center;
+
+color: white;
+
+background: linear-gradient(to right,#9ab1d9,#aa5075);
+}

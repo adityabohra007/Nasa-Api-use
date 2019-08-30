@@ -1,0 +1,11 @@
+.titleName{
+color:white;
+line-height: 2;
+letter-spacing: 0.034em;
+font-weight: 900;
+font-style: normal;
+font-size: large;
+font-family: sans;
+height: 50px;
+overflow-y: scroll;
+}
