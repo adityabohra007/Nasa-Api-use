@@ -19,13 +19,15 @@ class App extends Component{
     }
 
     handleSearchButton(){
+        console.log(process.env)
         let date_selected = document.getElementById("date-selector").value;
         let url=``;
         if (date_selected.length){
-            url = `https://api.nasa.gov/planetary/apod?date=`+date_selected+`&api_key=wvL74OQm4qWLDhNf1MMnNZtGTWhReMZsKwjQrqCB`
+            url = `https://api.nasa.gov/planetary/apod?date=`+date_selected+`&api_key=`+process.env.REACT_APP_API_NASA;
+
         }
         else{
-        url = `https://api.nasa.gov/planetary/apod?api_key=wvL74OQm4qWLDhNf1MMnNZtGTWhReMZsKwjQrqCB`
+        url = `https://api.nasa.gov/planetary/apod?api_key=`+process.env.REACT_APP_API_NASA;
         }
          fetch(url)
          .then(res => res.json())
@@ -34,7 +36,7 @@ class App extends Component{
              var nasa = new Nasa(data);
              console.log(nasa.title);
              this.setState({nasa})
-             console.log(this.state)
+             console.log(process.env.NODE_ENV)
     }).catch(err => console.log(err));
 
     }
